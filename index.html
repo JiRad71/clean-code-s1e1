@@ -13,7 +13,7 @@
       <section class="main__add">
         <h3 class="main__add_title">Add Item</h3>
         <div class="main__add__row">
-          <input id="new-task" class="task" type="text">
+          <input id="new-task" class="main__todo_input-edit" type="text">
           <button class="main__add__row_button">Add</button>
         </div>
       </section>
@@ -21,18 +21,18 @@
         <h3 class="main__todo__title">Todo</h3>
         <ul id="incompleteTasks">
           <li class="main__todo_list">
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="./remove.svg"></button>
+            <input type="checkbox" class="main__todo_input-check">
+            <label class="main__todo_label">Pay Bills</label>
+            <input type="text" class="main__todo_input-edit">
+            <button class="main__todo_edit">Edit</button>
+            <button class="main__todo_delete"><img src="./remove.svg"></button>
           </li>
           <li class="editMode main__edit-mode_list">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete"><img src="./remove.svg"></button>
+            <input type="checkbox" class="main__todo_input-check">
+            <label class="main__todo_label">Go Shopping</label>
+            <input type="text" value="Go Shopping" class="main__todo_input-edit">
+            <button class="main__todo_edit">Save</button>
+            <button class="main__todo_delete"><img src="./remove.svg"></button>
           </li>
         </ul>
       </section>
@@ -40,11 +40,11 @@
         <h3 class="main__completed__title">Completed</h3>
         <ul id="completed-tasks">
           <li class="main__completed_list">
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete"><img src="./remove.svg"></button>
+            <input type="checkbox" class="main__todo_input-check" checked>
+            <label class="main__todo_label">See the Doctor</label>
+            <input type="text" class="main__todo_input-edit">
+            <button class="main__todo_edit">Edit</button>
+            <button class="main__todo_delete"><img src="./remove.svg"></button>
           </li>
         </ul>
       </section>
