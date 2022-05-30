@@ -26,7 +26,7 @@ body {
     width: 500px;
     margin: 0 auto 0;
 }
-.task {
+.main__todo_input-edit {
     width: 56%;
     display: inline-block;
     flex-grow: 1
@@ -44,7 +44,7 @@ li, h3 {
 input,button{
     outline:none;
 }
-.main__add__row_button, .edit, .delete {
+.main__add__row_button, .main__todo_edit, .main__todo_delete {
     background: none;
     border: 0px;
     color: #888;
@@ -53,7 +53,7 @@ input,button{
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-.main__add__row_button:hover, .edit:hover, .delete:hover {
+.main__add__row_button:hover, .edit:hover, .main__todo_delete:hover {
     color: #3a3A3a;
 }
 /* Heading */
@@ -67,7 +67,7 @@ input,button{
     margin: 0;
     text-transform: uppercase;
 }
-.task {
+.main__todo_input-edit {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -79,7 +79,7 @@ input,button{
     font-family: Lato, sans-serif;
     color: #888;
 }
-.task:focus {
+.main__todo_input-edit:focus {
     color: #333;
 }
 
@@ -88,7 +88,7 @@ input,button{
     display: block;
     margin: 0 0 20px;
 }
-.task {
+.main__todo_input-edit {
     width: 318px;
 }
 
@@ -106,43 +106,44 @@ input,button{
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.main__todo_input-check {
     margin: 0 10px;
 }
-li > label {
+.main__todo_label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
+    flex-grow: 1;
 }
-li >    input[type="text"] {
+.main__todo_input-edit {
     width: 226px
 }
-button.delete img {
+button.main__todo_delete img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+button.main__todo_delete img:hover {
     transform: rotateZ(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.main__completed .main__todo_label {
     text-decoration: line-through;
     color: #888;
 }
 
 /* Edit Task */
-ul li input[type=text] {
+.main__edit-mode_list .main__todo_input-edit, .main__todo_list .main__todo_input-edit, .main__completed_list .main__todo_input-edit {
     display:none
 }
 
-ul li.editMode input[type=text] {
+.main__todo_edit-mode .main__todo_input-edit {
     display:inline-block;
     width:224px
 }
 
-ul li.editMode label {
+.main__todo_edit-mode .main__todo_label {
     display:none;
 }
