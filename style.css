@@ -17,7 +17,7 @@ body {
     font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
   .header { text-align: center;
   }
@@ -37,14 +37,14 @@ body {
     display: flex;
 }
 ul {
-    margin:0;
+    margin: 0;
     padding: 0px;
 }
 li, h3 {
-    list-style:none;
+    list-style: none;
 }
 input,button{
-    outline:none;
+    outline: none;
 }
 .main__add__row_button, .main__todo_edit, .main__todo_delete {
     background: none;
@@ -138,14 +138,14 @@ button.main__todo_delete img:hover {
 
 /* Edit Task */
 .main__edit-mode_list .main__todo_input-edit, .main__todo_list .main__todo_input-edit, .main__completed_list .main__todo_input-edit {
-    display:none
+    display: none
 }
 
 .main__todo_edit-mode .main__todo_input-edit {
-    display:inline-block;
-    width:224px
+    display: inline-block;
+    width: 224px
 }
 
 .main__todo_edit-mode .main__todo_label {
-    display:none;
+    display: none;
 }
